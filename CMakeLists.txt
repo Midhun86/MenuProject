@@ -6,8 +6,8 @@ set(CMAKE_C_STANDARD 11)
 
 if(USE_ARM)
 # Set ARM cross-compiler and flags
-	set(CMAKE_C_COMPILER arm-none-eabi-gcc)
-	set(CMAKE_C_FLAGS "--specs=rdimon.specs")
+	set(CMAKE_C_COMPILER arm-linux-gnueabi-gcc)
+	set(CMAKE_C_FLAGS "-static")
 endif()
 
 # Directory structure
